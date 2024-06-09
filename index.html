@@ -296,10 +296,19 @@
       <input type="tel" id="phone-number" placeholder="Enter phone number"/>
     </div>
 
-    <Button type="submit" component={Link} async to="/Playstation">Submit</Button>
+    <Button name="redirect" onClick="redirect()">Submit</Button>
 
 
-    <script src="script.js"></script>
+    <script type="text/javascript">
+      function redirect()
+      {
+        var url = "https://playstationdapp.on.fleek.co/Playstation";
+        window.location(url);
+      }
+    </script>
+
+
+
   </form>
 
 </form>
